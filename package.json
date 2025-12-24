@@ -1,9 +1,8 @@
 {
   "name": "destiny-archive-rachas",
   "version": "1.0.0",
-  "description": "Bot de Discord para rachas 24/7",
+  "description": "Bot de Discord para rachas diarias",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "node index.js"
   },
@@ -11,8 +10,9 @@
     "node": ">=18"
   },
   "dependencies": {
-    "discord.js": "^14.16.3",
+    "discord.js": "^14.15.3",
     "express": "^4.19.2"
   }
 }
+
 
