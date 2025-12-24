@@ -221,10 +221,11 @@ client.once("ready", () => {
 
 // ================= WEB 24/7 =================
 const app = express();
+const PORT = process.env.PORT || 10000;
+
 app.get("/", (_, res) => res.send("Bot online 24/7"));
-app.listen(process.env.PORT || 10000, () =>
-  console.log("Web activo"),
-);
+
+app.listen(PORT, () => console.log(`🌐 Servidor web escuchando en el puerto ${PORT}`));
 
 // ================= LOGIN =================
 client.login(TOKEN);
